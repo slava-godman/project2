@@ -9,7 +9,7 @@
 </head>
 <body>
     <form>
-        <div class="card-body" >
+        <div class="card-body h-100 p-md-5" >
 
             <!-- Email input -->
             <div data-mdb-input-init class="form-outline mb-4">
@@ -24,7 +24,13 @@
             </div>
             <!-- Submit button -->
             <button id="loginButton" type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
-            
+            <!-- Progress Bar Wrapper -->
+            <div id="progressWrapper" class="progress mt-3" style="height: 25px; display: none;">
+               <div id="progressBar" class="progress-bar bg-success" role="progressbar" style="width: 0%">
+                 0%
+               </div>
+             </div>
+  
             <!-- Register buttons -->
             <div class="text-center">
                 <p>Not a member? <a href="../pages/registry.html">Register</a></p>

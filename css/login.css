@@ -1,9 +1,13 @@
 body{
-    background-color: rgb(8, 57, 80);
+    background-color: lightslategray;
 }
 
 .card-body{
     margin: auto;
-
+    width: 20%;
+    margin-top: 200px;
+    background-color: darkgrey;
+    text-align: center;
+    padding: auto;
 }
 
