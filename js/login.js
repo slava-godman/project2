@@ -1,3 +1,4 @@
+import { set_to_storage } from "../js/utils.js";
 $(document).ready(function () {
     $('#loginButton').on('click', function () {
       const email = $('#form2Example1').val();
@@ -18,7 +19,7 @@ $(document).ready(function () {
         // User found -> proceed to login animation
         $(this).hide();
         $('#progressWrapper').show();
-  
+        set_to_storage("currentUser",validUser.username)
         let progress = 0;
         const interval = setInterval(function () {
           progress += 1;
@@ -26,7 +27,13 @@ $(document).ready(function () {
   
           if (progress >= 100) {
             clearInterval(interval);
-            window.location.href = "home.html";
+            if(validUser.port){
+              window.location.href = "./home.html"
+            }
+            else{
+              window.location.href="./first_session.html"
+            }
+            ;
           }
         }, 70);
       } else {

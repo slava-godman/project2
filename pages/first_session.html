@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/fs.css">
+</head>
+<body>
+    <div id="form">
+        <h2 id="user"></h2>
+    
+        <label for="age">Age:</label>
+        <input id="age" name="age" min="0" required><br><br>
+    
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" rows="3" cols="30" required><br><br>
+
+        <label for="about">About:</label><br>
+        <textarea id="about" name="about" rows="3" cols="30" required></textarea><br><br>
+
+        <label for="linkedin">LinkedIn Profile:</label><br>
+        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourname"><br><br>
+    
+        <label for="github">GitHub Profile:</label><br>
+        <input type="url" id="github" name="github" placeholder="https://github.com/yourname"><br><br>
+    
+        <label for="picture">Upload Profile Picture:</label><br>
+        <input type="file" id="picture" name="picture" accept="image/*"><br><br>
+    
+        <fieldset>
+            <legend>Select Interests:</legend>
+            <input type="checkbox" id="weather" name="interests" value="weather">
+            <label for="weather">Weather</label><br>
+    
+            <input type="checkbox" id="forex" name="interests" value="forex">
+            <label for="forex">Forex</label>
+        </fieldset><br>
+    
+        <button type="submit" id="submit">Submit</button>
+    </div>
+    <script type="module" src="../js/FS.js"></script>
+</body>
+</html>
