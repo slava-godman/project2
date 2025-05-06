@@ -35,7 +35,7 @@ $(document).ready(function () {
             }
             ;
           }
-        }, 70);
+        }, 50);
       } else {
         // User not found
         alert('Invalid email or password.');
