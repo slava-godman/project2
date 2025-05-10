@@ -22,4 +22,97 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    padding: 20px;
+}
+
+/* Card title styling */
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button styling */
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-danger {
+    background-color: #ff4d4d;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #ff1a1a;
+    box-shadow: 0 4px 12px rgba(255, 77, 77, 0.5);
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.5);
+}
+
+/* Weather and Forex data styling */
+#apiData {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+
+#apiData h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#apiData p {
+    margin: 5px 0;
+}
+
+/* Add a gradient background to the page */
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
 

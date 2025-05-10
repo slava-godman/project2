@@ -1,28 +1,36 @@
+/* General body styling */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f3f4f6;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
     margin: 0;
     padding: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* Form container styling */
 #form {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 500px;
 }
 
+/* Form heading */
 h2 {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #333;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
+/* Label styling */
 label {
     font-weight: 600;
     display: block;
@@ -30,24 +38,37 @@ label {
     color: #444;
 }
 
+/* Input and textarea styling */
 input[type="text"],
 input[type="number"],
 input[type="url"],
 input[type="file"],
 textarea {
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.8rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;
     box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 8px rgba(79, 70, 229, 0.3);
+    outline: none;
 }
 
 textarea {
     resize: vertical;
 }
 
+/* Fieldset and legend styling */
 fieldset {
     border: none;
     padding: 0;
@@ -57,12 +78,16 @@ fieldset {
 legend {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
 }
 
+/* Checkbox styling */
 input[type="checkbox"] {
     margin-right: 0.4rem;
 }
 
+/* Button styling */
 button {
     width: 100%;
     padding: 0.75rem;
@@ -72,9 +97,37 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background: #3730a3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* Add hover effect for file input */
+input[type="file"] {
+    cursor: pointer;
+}
+
+/* Add spacing between sections */
+fieldset + fieldset {
+    margin-top: 1.5rem;
+}
+
+/* Add a subtle animation to the form */
+#form {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

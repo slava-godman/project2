@@ -1,13 +1,86 @@
-body{
-    background-color: lightslategray;
+/* General body styling */
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.card-body{
-    margin: auto;
-    width: 35%;
-    margin-top: 200px;
-    background-color: darkgrey;
+/* Card styling */
+.card-body {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
-    padding: auto;
+    padding: 2rem;
 }
 
+/* Input fields styling */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 8px rgba(79, 70, 229, 0.3);
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #4f46e5;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #3730a3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+/* Header styling */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card-body {
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
