@@ -26,6 +26,8 @@ $(document).ready(function () {
       localStorage.setItem('users', JSON.stringify(users));
   
       alert('Registration successful!');
+      // Redirect to login page
+      window.location.href = "./login.html";
     });
   });
   
