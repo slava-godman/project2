@@ -47,5 +47,5 @@ id_element("submit").addEventListener("click", () => {
 
     users[index] = UD;
     set_to_storage("users", users);
-    window.location.href = "./home.html";
+    window.location.href = "./portfolio.html";
 });

@@ -99,9 +99,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Logout button functionality
-    const logoutButton = id_element("logoutButton");
-    logoutButton.addEventListener("click", () => {
-        set_to_storage("currentUser", null); // Clear the current user
-        window.location.href = "./login.html"; // Redirect to the login page
-    });
+  const portfolioButton = id_element("portfolioButton");
+portfolioButton.addEventListener("click", () => {
+    window.location.href = "./portfolio.html";
+});
 });

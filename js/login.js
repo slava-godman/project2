@@ -28,12 +28,12 @@ $(document).ready(function () {
           if (progress >= 100) {
             clearInterval(interval);
             if(validUser.port){
-              window.location.href = "./home.html"
+              // Redirect to portfolio page after successful login
+              window.location.href = "./portfolio.html";
             }
             else{
-              window.location.href="./first_session.html"
-            }
-            ;
+              window.location.href="./first_session.html";
+            };
           }
         }, 50);
       } else {
